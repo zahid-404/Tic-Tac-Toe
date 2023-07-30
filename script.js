@@ -1,7 +1,10 @@
+// import functions from animation js
+import { loadParticles, popperSound, btnSound, configs } from "./animation";
+
 // All Variables
 const boxes = document.querySelectorAll(".box");
 const gameInfo = document.querySelector(".game-info");
-const newGameBtn = document.querySelector(".btn");
+const newGameBtn = document.querySelector(".btnw");
 
 let currentPlayer;
 let gameGrid;
@@ -97,6 +100,8 @@ function checkGameOver() {
   if (answer !== "") {
     gameInfo.innerText = `Winner Player - ${answer}`;
     newGameBtn.classList.add("active");
+    loadParticles(configs);
+    popperSound();
     return;
   }
 
@@ -114,3 +119,4 @@ function checkGameOver() {
 }
 // new game button
 newGameBtn.addEventListener("click", initGame);
+newGameBtn.addEventListener("click", btnSound);
