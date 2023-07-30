@@ -1,5 +1,11 @@
 // import functions from animation js
-import { loadParticles, popperSound, btnSound, configs } from "./animation";
+import {
+  loadParticles,
+  popperSound,
+  btnSound,
+  gridSound,
+  configs,
+} from "./animation";
 
 // All Variables
 const boxes = document.querySelectorAll(".box");
@@ -42,6 +48,7 @@ boxes.forEach((box, index) => {
   box.addEventListener("click", () => {
     handleClick(index);
   });
+  box.addEventListener("click", gridSound);
 });
 
 // function for filling values in  boxes

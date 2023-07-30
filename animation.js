@@ -158,6 +158,17 @@ async function btnSound() {
 }
 // btn sound end
 
+// grid click sound
+async function gridSound() {
+  const audioBtnElement = new Audio("./assets/grid-click.mp3");
+  audioBtnElement.play();
+  setTimeout(() => {
+    audioBtnElement.pause();
+    audioBtnElement.currentTime = 0;
+  }, 800);
+}
+// grid click sound
+
 // function for stopping
 function stopFunc() {
   // Clear the timeout using the stored timeoutId
@@ -165,4 +176,4 @@ function stopFunc() {
 }
 
 // Exporting functions
-export { loadParticles, popperSound, btnSound, configs };
+export { loadParticles, popperSound, btnSound, gridSound, configs };
