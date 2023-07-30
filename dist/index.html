@@ -4,14 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic Tac Toe</title>
-    <link rel="shortcut icon" href="/assets/favicon-9fb12427.png" type="image/x-icon">
+    <title>Tic Tac To</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/favicon-9fb12427.png" type="image/x-icon" />
     
-    <script type="module" crossorigin src="/assets/index-af8d05a7.js"></script>
-    <link rel="stylesheet" href="/assets/index-e406f2b7.css">
+    <script type="module" crossorigin src="/assets/index-5ae34a25.js"></script>
+    <link rel="stylesheet" href="/assets/index-603ce2c2.css">
   </head>
-
   <body>
+    <div
+      class="wrapper w-screen h-screen bg-[url(./assets/gradient-bg.jpg)] bg-cover bg-center grid place-items-center"
+    >
+      <p
+        class="game-info text-white absolute top-12 left-1/2 bg-bgBtn -translate-x-1/2 rounded-2xl border-solid border-white border-opacity-25 py-1 px-6 md:py-2 md:px-12 text-center"
+      >
+        Current Player
+      </p>
+      <div
+        class="tic-tac-toe w-[90%] max-w-[20rem] bg-bgBtn rounded-2xl border-solid border-white border-opacity-25 p-8 grid grid-cols-3 aspect-square md:mt-20"
+      >
+        <div class="box border-r-2 border-b-2 border-white"></div>
+        <div class="box border-r-2 border-b-2 border-white"></div>
+        <div class="box border-b-2 border-white"></div>
+        <div class="box border-r-2 border-b-2 border-white"></div>
+        <div class="box border-r-2 border-b-2 border-white"></div>
+        <div class="box border-b-2 border-white"></div>
+        <div class="box border-r-2 border-white"></div>
+        <div class="box border-r-2 border-white"></div>
+        <div class="box"></div>
+      </div>
+      <button class="btn text-white absolute bottom-12 left-1/2 -translate-x-1/2 rounded-2xl border-solid border-white border-opacity-25 bg-bgBtn py-2 px-8 cursor-pointer ">New Game</button>
+    </div>
     
   </body>
 </html>

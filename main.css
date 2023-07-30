@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply m-0 p-0 box-border font-myfont;
+}
+
+.box {
+  @apply relative w-full aspect-square cursor-pointer text-5xl text-white flex justify-center items-center;
+}
+
+.active {
+  @apply flex;
+}
+
+.win {
+  @apply bg-green-500
+}
