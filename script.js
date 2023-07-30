@@ -27,7 +27,7 @@ function initGame() {
   gameGrid = ["", "", "", "", "", "", "", "", ""];
   boxes.forEach((box, index) => {
     box.innerText = "";
-    box.style.pointerEvents;
+    box.style.pointerEvents = "all";
     box.classList = `box box${index + 1}`;
   });
   newGameBtn.classList.remove("active");
@@ -66,7 +66,6 @@ function swapTurn() {
 
 // function for checking game over or not
 function checkGameOver() {
-  newGameBtn.classList.add("active");
   let answer = "";
 
   winningPositions.forEach((position) => {
