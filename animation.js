@@ -160,7 +160,7 @@ async function btnSound() {
 
 // grid click sound
 async function gridSound() {
-  const audioBtnElement = new Audio("./assets/grid-click.mp3");
+  const audioBtnElement = new Audio("https://cdn.jsdelivr.net/gh/zahid-404/Tic-Tac-Toe@main/assets/grid-click.mp3");
   audioBtnElement.play();
   setTimeout(() => {
     audioBtnElement.pause();
