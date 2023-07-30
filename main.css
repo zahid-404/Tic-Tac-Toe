@@ -12,10 +12,27 @@
   @apply relative w-full aspect-square cursor-pointer text-5xl text-white flex justify-center items-center;
 }
 
+.box1,
+.box2,
+.box4,
+.box5 {
+  @apply border-r-2 border-b-2 border-white;
+}
+
+.box3,
+.box6 {
+  @apply border-b-2 border-white;
+}
+
+.box7,
+.box8 {
+  @apply border-r-2 border-white;
+}
+
 .active {
   @apply flex;
 }
 
 .win {
-  @apply bg-green-500
+  @apply bg-green-500;
 }
